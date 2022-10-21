@@ -2,8 +2,13 @@
 
 
 <div class="product-slider">
-  {% for product_single in section.settings.product_list %}
-    {{ product_single.title }}
+  {% for block in section.blocks %}
+    {%- case block.type -%}
+        {%- when 'products' -%}
+          {% for product_single in block %}
+            {{ product_single.title }}
+          {% endfor %}
+    {%- endcase -%}
   {% endfor %}
 </div>
 
@@ -16,8 +21,8 @@
   ],
   "blocks": [
     {    
-      "type": "product_lists",
-      "name": "product lists",
+      "type": "products",
+      "name": "products,
       "settings": [
         {    
           "type": "product_list",
