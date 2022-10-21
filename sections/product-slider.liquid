@@ -8,13 +8,13 @@
 
   {% for block in section.blocks %}
     {%- case block.type -%}
-      {%- when 'products group' -%}
+      {%- when 'products' -%}
         {% for product_single in block.settings.product_list %}
           <h3>{{ product_single.title }}
           </h3>
           <img src="{{ product_single.featured_image | img_url: '600x600' }}"/>
         {% endfor %}
-      {%- when 'paragraph' -%}
+      {%- when 'text' -%}
         <p>{{ block.settings.richtext }}
         </p>
     {%- endcase -%}
