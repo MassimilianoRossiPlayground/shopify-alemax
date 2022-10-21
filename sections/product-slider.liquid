@@ -15,7 +15,7 @@
           <img src="{{ product_single.featured_image | img_url: '600x600' }}"/>
         {% endfor %}
       {%- when 'paragraph' -%}
-        <p>{{ block.settings.textarea }}
+        <p>{{ block.settings.richtext }}
         </p>
     {%- endcase -%}
   {% endfor %}
@@ -49,8 +49,8 @@
         "name": "paragraph",
         "settings": [
           {
-            "type": "textarea",
-            "id": "textarea",
+            "type": "richtext",
+            "id": "richtext",
             "label": "Text"
           }
         ]
