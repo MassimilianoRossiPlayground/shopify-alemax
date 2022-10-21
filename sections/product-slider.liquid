@@ -2,12 +2,17 @@
 
 
 <div class="product-slider">
+
+  {{ section.settings.title }}
+
   {% for block in section.blocks %}
     {%- case block.type -%}
       {%- when 'products' -%}
-        {% for product_single in block %}
+        {% for product_single in block.settings.product_list %}
           {{ product_single.title }}
         {% endfor %}
+      {%- when 'paragraph' -%}
+        {{ block.settings.textarea }}
     {%- endcase -%}
   {% endfor %}
 </div>
