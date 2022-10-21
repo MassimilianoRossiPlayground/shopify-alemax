@@ -9,21 +9,8 @@
     },
     "2d66a6c9-ca94-4264-8da4-6365b6bcad25": {
       "type": "product-slider",
-      "blocks": {
-        "689d4a0e-e758-4529-b53c-a59b0d086d9e": {
-          "type": "product_lists",
-          "settings": {
-            "product_list": [
-              "fragrant-hill",
-              "fresh"
-            ]
-          }
-        }
-      },
-      "block_order": [
-        "689d4a0e-e758-4529-b53c-a59b0d086d9e"
-      ],
       "settings": {
+        "title": "titolone"
       }
     }
   },
