@@ -7,17 +7,19 @@
         "padding_bottom": 28
       }
     },
-    "b043c171-3425-45f4-8229-66be32c2fe6e": {
+    "2d66a6c9-ca94-4264-8da4-6365b6bcad25": {
       "type": "product-slider",
       "settings": {
         "product_list": [
-
+          "fresh",
+          "x-warm",
+          "warm"
         ]
       }
     }
   },
   "order": [
     "main",
-    "b043c171-3425-45f4-8229-66be32c2fe6e"
+    "2d66a6c9-ca94-4264-8da4-6365b6bcad25"
   ]
 }
