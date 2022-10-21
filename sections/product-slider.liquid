@@ -1,6 +1,11 @@
 {{ 'section-product-slider.scss.css' | asset_url | stylesheet_tag }}
 
 
+<div class="product-slider">
+  {% for product_single in section.settings.product_list %}
+    {{ product_single.title }}
+  {% endfor %}
+</div>
 
 {% schema %}
 {
