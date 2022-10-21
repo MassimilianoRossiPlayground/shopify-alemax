@@ -11,9 +11,10 @@
       "type": "product-slider",
       "settings": {
         "product_list": [
+          "fragrant-hill",
           "fresh",
-          "x-warm",
-          "warm"
+          "warm",
+          "x-warm"
         ]
       }
     }
