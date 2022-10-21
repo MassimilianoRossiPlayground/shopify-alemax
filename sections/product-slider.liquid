@@ -4,49 +4,58 @@
 <div class="product-slider">
   {% for block in section.blocks %}
     {%- case block.type -%}
-        {%- when 'products' -%}
-          {% for product_single in block %}
-            {{ product_single.title }}
-          {% endfor %}
+      {%- when 'products' -%}
+        {% for product_single in block %}
+          {{ product_single.title }}
+        {% endfor %}
     {%- endcase -%}
   {% endfor %}
 </div>
 
 {% schema %}
-{
-  "name": "Product Slider",
-  "tag": "section",
-  "class": "section",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "t:sections.image-banner.settings.image.label"
-    }
-  ],
-  "blocks": [
-    {    
-      "type": "products",
-      "name": "products,
-      "settings": [
-        {    
-          "type": "product_list",
-          "id": "product_list",
-          "default": "Image banner",
-          "label": "Product List"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Product Slider",
-      "blocks": [
-        {
-          "type": "products"
-        }
-      ]
-    }
-  ]
-}
+  {
+    "name": "Product Slider",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "products",
+        "name": "products",
+        "settings": [
+          {
+            "type": "product_list",
+            "id": "product_list",
+            "label": "Product List"
+          }
+        ]
+      }, {
+        "type": "text",
+        "name": "paragraph",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "textarea",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Slider",
+        "blocks": [
+          {
+            "type": "products"
+          }
+        ]
+      }
+    ]
+  }
 {% endschema %}
