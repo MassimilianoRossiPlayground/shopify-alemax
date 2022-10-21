@@ -9,6 +9,26 @@
     },
     "2d66a6c9-ca94-4264-8da4-6365b6bcad25": {
       "type": "product-slider",
+      "blocks": {
+        "810ed849-7d6e-404d-b7c8-e03482f3b0c5": {
+          "type": "products",
+          "settings": {
+            "product_list": [
+              "fragrant-hill"
+            ]
+          }
+        },
+        "51e3171a-6cee-4e83-853d-d1dfbcbad645": {
+          "type": "text",
+          "settings": {
+            "textarea": "pragrapo"
+          }
+        }
+      },
+      "block_order": [
+        "810ed849-7d6e-404d-b7c8-e03482f3b0c5",
+        "51e3171a-6cee-4e83-853d-d1dfbcbad645"
+      ],
       "settings": {
         "title": "titolone"
       }
