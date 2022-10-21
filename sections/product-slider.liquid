@@ -7,7 +7,7 @@
   </h2>
 
   {% for block in section.blocks %}
-    {%- case block.name -%}
+    {%- case block.type -%}
       {%- when 'products group' -%}
         {% for product_single in block.settings.product_list %}
           <h3>{{ product_single.title }}
@@ -44,7 +44,8 @@
             "label": "Product List"
           }
         ]
-      }, {
+      }, 
+      {
         "type": "text",
         "name": "paragraph",
         "settings": [
