@@ -6,9 +6,21 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "2d66a6c9-ca94-4264-8da4-6365b6bcad25": {
+      "type": "product-slider",
+      "settings": {
+        "product_list": [
+          "fragrant-hill",
+          "fresh",
+          "warm",
+          "x-warm"
+        ]
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "2d66a6c9-ca94-4264-8da4-6365b6bcad25"
   ]
 }
