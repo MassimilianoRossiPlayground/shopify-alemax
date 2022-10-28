@@ -13,8 +13,8 @@
                 }
 
                 init() {
-                        sliders_aa = document.querySelectorAll('.product-slider');
-                        [...sliders_aa].forEach((slider) => {
+                        this.sliders_aa = document.querySelectorAll('.product-slider');
+                        [...this.sliders_aa].forEach((slider) => {
 
                                 console.log("spread forEach worked");
 
